@@ -23,8 +23,29 @@ This repository contains a standalone script, `brute_force_detector.py`, that us
 
 ## Usage
 
-### 1. Download this repository to your computer:
+1. Clone this repository in Terminal:
 
 ```
-git clone 
+git clone https://github.com/dre86dre/brute_force_detector.git 
 ```
+
+2. Navigate to the folder:
+
+```
+cd brute_force_detector
+```
+
+3. Make the script executable (optional):
+
+```
+chmod +x brute_force_detector.py
+```
+
+4. Run the detector against the example test log provided in folder:
+
+A basic test with a 5-minute window and threshold of 3 attempts
+
+```
+python3 brute_force_detector.py -l test_bruteforce.log -w 300 -t 3 -v
+```
+
