@@ -9,3 +9,5 @@ Oct 21 14:05:00 host sshd[104]: Accepted password for gooduser from 2.2.2.2 port
 Random unrelated log entry that should not match anything
 2023-10-21T14:03:20 - Failed login from 9.10.11.12: authentication failure
 2023-10-21T14:03:35 - Failed login from 9.10.11.12: authentication failure
+2023-10-21T14:20:35 - Failed login from 9.10.11.12: authentication failure
+2023-10-21T14:21:52 - Failed login from 9.10.11.12: authentication failure
