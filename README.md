@@ -46,6 +46,13 @@ chmod +x brute_force_detector.py
 A basic test with a 5-minute window and threshold of 3 attempts
 
 ```
-python3 brute_force_detector.py -l test_bruteforce.log -w 300 -t 3 -v
+python3 brute_force_detector.py -l test.log -w 300 -t 3 -v
 ```
 
+Expected output:
+
+```
+Potential brute-force sources:
+ - 1.2.3.4: 3 hits within 300s (total: 3)
+ - 9.10.11.12: 4 hits within 300s (total: 4)
+```
