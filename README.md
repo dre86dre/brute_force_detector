@@ -56,3 +56,14 @@ Potential brute-force sources:
  - 1.2.3.4: 3 hits within 300s (total: 3)
  - 9.10.11.12: 4 hits within 300s (total: 4)
 ```
+
+## Interpreting results
+
+When the script finds suspicious IPs it prints:
+
+```
+Potential brute-force sources detected:
+ - 1.2.3.4: 3 hits within 300s (total: 3)
+```
+
+This means the IP made 3 failed attempts within the 5-minute window (and 3 attempts total in the scanned data).
