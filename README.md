@@ -63,8 +63,8 @@ Potential brute-force sources:
 
 This means:
 
-The IP "1.2.3.4" made 3 failed attempts within the 5-minute window (and 3 attempts total in the scanned data).
-The IP "9.10.11.12" made 4 failed attempts within the 5-minute window (and 6 attempts total in the scanned data).
+- The IP "1.2.3.4" made 3 failed attempts within the 5-minute window (and 3 attempts total in the scanned data).
+- The IP "9.10.11.12" made 4 failed attempts within the 5-minute window (and 6 attempts total in the scanned data).
 
 Use this information to investigate, tune thresholds, or block IPs (after verifying to avoid false positives).
 
