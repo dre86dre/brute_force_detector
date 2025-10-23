@@ -21,3 +21,10 @@ This repository contains a standalone script, `brute_force_detector.py`, that us
 
 ---
 
+## Usage
+
+### 1. Download this repository to your computer:
+
+```
+git clone 
+```
