@@ -54,16 +54,32 @@ Expected output:
 ```
 Potential brute-force sources:
  - 1.2.3.4: 3 hits within 300s (total: 3)
- - 9.10.11.12: 4 hits within 300s (total: 4)
+ - 9.10.11.12: 4 hits within 300s (total: 6)
 ```
+
+---
 
 ## Interpreting results
 
-When the script finds suspicious IPs it prints:
+This means:
 
-```
-Potential brute-force sources detected:
- - 1.2.3.4: 3 hits within 300s (total: 3)
-```
+The IP "1.2.3.4" made 3 failed attempts within the 5-minute window (and 3 attempts total in the scanned data).
+The IP "9.10.11.12" made 4 failed attempts within the 5-minute window (and 6 attempts total in the scanned data).
 
-This means the IP made 3 failed attempts within the 5-minute window (and 3 attempts total in the scanned data).
+Use this information to investigate, tune thresholds, or block IPs (after verifying to avoid false positives).
+
+---
+
+## Contributing
+
+Pull requests and issues are welcome. Suggestions:
+
+- Add more timestamp formats in `try_parse_timestamp`.
+- Add optional JSON/CSV output or integration with alerting systems.
+- Add a `--tail` mode to watch logs live (careful with resource use).
+
+---
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/dre86dre/brute_force_detector/blob/main/LICENSE).
